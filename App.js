@@ -1,20 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
 
 import React, { Fragment } from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar
-} from "react-native";
+import {View, } from "react-native";
 
 import CustomInput from "./app/components/CustomInput";
 import styles from "./app/shared/Style";
