@@ -1,10 +1,17 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { View } from "react-native";
 import CustomInput from "../components/CustomInput";
 import CustomButton from "../components/CustomButton";
 import styles from "../shared/Style";
 
-export default class Login extends React.Component {
+import { observer, inject } from "mobx-react";
+
+@inject("store")
+export default class Login extends Component {
+  
+    componentDidMount(){
+      alert(JSON.stringify(this.props));
+    }
     render(){
         return(
            <View style={styles.center_container}>
