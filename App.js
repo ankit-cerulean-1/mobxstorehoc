@@ -1,18 +1,16 @@
 
-import React, { Fragment } from "react";
+import React from "react";
 import {View, } from "react-native";
 
-import CustomInput from "./app/components/CustomInput";
-import styles from "./app/shared/Style";
-import CustomButton from "./app/components/CustomButton";
+import Login from "./app/screens/Login";
+import { Provider } from "mobx-react";
+import store from "./app/store/Store";
 
 const App = () => {
   return (
-    <View style={styles.center_container}>
-      <CustomInput placeholder={"Enter Email"} onTextChanged={()=>{}} />
-      <CustomInput placeholder={"Enter Password"} onTextChanged={()=>{}}/>
-      <CustomButton title={"Login"} />
-    </View>
+    <Provider store={store}>
+      <Login />
+    </Provider>
   );
 };
 export default App;

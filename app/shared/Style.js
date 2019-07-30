@@ -6,4 +6,5 @@ export default styles = {
         justifyContent: 'center',
         padding: Constants.dimensions.medium,
     },
+    
 }
